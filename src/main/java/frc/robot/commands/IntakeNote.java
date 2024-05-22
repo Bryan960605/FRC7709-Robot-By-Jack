@@ -35,7 +35,7 @@ public class IntakeNote extends Command {
   // Called once the command ends or is interrupted.
   @Override
   public void end(boolean interrupted) {
-    m_intakeSubsystem.stopShaft();
+    m_intakeSubsystem.intakeSetBack();
     m_intakeSubsystem.stopWheel();
     m_indexerSubsystem.stopIndexer();
   }
